@@ -8,8 +8,10 @@ This project analyzes personal scuba dive logs recorded by a Suunto Ocean diving
 Python 3.12 or higher. Install dependencies with: pip install -r requirements.txt
 
 # How to Reproduce
-Step 1 — Place your Suunto .fit dive log files in the data/ folder and run: python parse.py — This generates data/dives_parsed.csv. Note: raw .fit files are excluded from this repository as they contain personal data. The parsed CSV is provided instead.
-Step 2 — Run the analysis: python eda.py — This prints summary statistics and hypothesis test results to the console and saves all figures to the figures/ folder.
+Step 1: Place your Suunto .fit dive log files in the data/ folder and run: python parse.py
+This generates data/dives_parsed.csv. Note: raw .fit files are excluded from this repository as they contain personal data. The parsed CSV is provided instead.
+Step 2: Run the analysis: python eda.py
+This prints summary statistics and hypothesis test results to the console and saves all figures to the figures/ folder.
 
 # Data
 Source: Personal dive logs exported from the Suunto app in .fit format. Device: Suunto Ocean diving computer. Period: July 2024 to January 2026. Total logs: 118 raw dives. After noise filtering: 85 clean dives. Variables: Date, Maximum Depth (m), Duration (seconds), Avg Temperature (C), Min Temperature (C).
